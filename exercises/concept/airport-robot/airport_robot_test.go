@@ -1,4 +1,5 @@
-package airportrobot
+// package airportrobot
+package main
 
 import "testing"
 
@@ -11,8 +12,13 @@ func TestSayHello_Italien(t *testing.T) {
 	}{
 		{
 			testName: "name without spaces",
-			name:     "Flora",
-			want:     "I can speak Italian: Ciao Flora!",
+			name:     "Petka",
+			want:     "I can speak Italian: Ciao Petka!",
+		},
+		{
+			testName: "name without spaces",
+			name:     "Luiggi",
+			want:     "I can speak Italian: Ciao Luiggi!",
 		},
 		{
 			testName: "full name",
@@ -31,7 +37,7 @@ func TestSayHello_Italien(t *testing.T) {
 }
 
 // testRunnerTaskID=3
-func TestSayHello_Portuguese(t *testing.T) {
+func TestSayHello_Bulgarian(t *testing.T) {
 	tests := []struct {
 		testName string
 		name     string
@@ -39,20 +45,20 @@ func TestSayHello_Portuguese(t *testing.T) {
 	}{
 		{
 			testName: "name without spaces",
-			name:     "Fabrício",
-			want:     "I can speak Portuguese: Olá Fabrício!",
+			name:     "Petka",
+			want:     "I can speak Bulgarian: Zdravei, Petka!",
 		},
 		{
 			testName: "full name",
-			name:     "Manuela Alberto",
-			want:     "I can speak Portuguese: Olá Manuela Alberto!",
+			name:     "Petka Motoretka",
+			want:     "I can speak Bulgarian: Zdravei, Petka Motoretka!",
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.testName, func(t *testing.T) {
-			if got := SayHello(tt.name, Portuguese{}); got != tt.want {
-				t.Errorf("SayHello(%q, \"Portuguese{}\") = %q, want %q", tt.name, got, tt.want)
+			if got := SayHello(tt.name, Bulgarian{}); got != tt.want {
+				t.Errorf("SayHello(%q, \"Bulgarian{}\") = %q, want %q", tt.name, got, tt.want)
 			}
 		})
 	}
