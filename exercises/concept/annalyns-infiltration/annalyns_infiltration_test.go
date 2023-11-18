@@ -1,4 +1,5 @@
-package annalyn
+// package annalyn
+package main
 
 import "testing"
 

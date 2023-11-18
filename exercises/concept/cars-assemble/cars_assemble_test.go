@@ -1,4 +1,5 @@
-package cars
+// package cars
+package main
 
 import (
 	"math"

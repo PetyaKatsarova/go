@@ -1,4 +1,6 @@
-package booking
+// package booking
+
+package main
 
 import (
 	"testing"

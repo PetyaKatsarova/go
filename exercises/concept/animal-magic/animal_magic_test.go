@@ -1,5 +1,7 @@
 //nolint:gosec // In the context of this exercise, it is fine to use math.Rand instead of crypto.Rand.
-package chance
+// package chance
+
+package main
 
 import (
 	"sort"

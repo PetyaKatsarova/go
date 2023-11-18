@@ -1,4 +1,5 @@
-package blackjack
+// package blackjack
+package main
 
 import "testing"
 

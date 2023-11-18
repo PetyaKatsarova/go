@@ -1,4 +1,5 @@
-package cards
+// package cards
+package main
 
 import (
 	"reflect"

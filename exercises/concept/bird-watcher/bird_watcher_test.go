@@ -1,4 +1,6 @@
-package birdwatcher
+// package birdwatcher
+
+package main
 
 import (
 	"reflect"
