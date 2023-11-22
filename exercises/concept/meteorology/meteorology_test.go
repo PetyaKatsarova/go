@@ -1,4 +1,5 @@
-package meteorology
+// package meteorology
+package main
 
 import (
 	"testing"
