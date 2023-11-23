@@ -1,4 +1,5 @@
-package parsinglogfiles
+// package parsinglogfiles
+package main
 
 import "testing"
 
