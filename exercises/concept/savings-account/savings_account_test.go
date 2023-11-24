@@ -1,4 +1,6 @@
-package savings
+// package savings
+
+package main
 
 import (
 	"testing"
